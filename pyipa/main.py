@@ -81,8 +81,7 @@ def main():
         manifest = {'items': [{'assets': [{'url': ipa_url, 'kind': 'software-package'},
                                           {'url': icon_url,'kind': 'display-image'},
                                           {'url': icon_url,'kind': 'full-size-image'}],
-                               'metadata': {'kind': 'software', 'title': display_name, 'bundle-identifier': bundle_id,'bundle-version': bundle_version}}],
-                    'custom': 'prova_paolo'
+                               'metadata': {'kind': 'software', 'title': display_name, 'bundle-identifier': bundle_id,'bundle-version': bundle_version}}]
                     }
 
         plistlib.writePlist(manifest, manifest_path)
